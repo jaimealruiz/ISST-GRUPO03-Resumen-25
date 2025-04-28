@@ -1,10 +1,18 @@
 /* Home.css */
+/* Fuente principal */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
 
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+}
 /* Contenedor principal: color de fondo, altura mínima, padding */
 .home-page {
     background-color: #f9fafb; /* Equivale a bg-gray-50 */
     min-height: 100vh;         /* Equivale a min-h-screen */
-    padding: 1.5rem;           /* p-6 = 1.5rem */
+    padding: 2rem;          /* p-6 = 2rem */
   }
   
   /* Primer bloque (hero / intro) centrado */
@@ -16,12 +24,14 @@
   }
   
   /* Título principal */
-  .home-title {
-    font-size: 3rem;       /* ~ text-5xl */
-    font-weight: 800;      /* ~ font-extrabold */
-    color: #2d3748;        /* text-gray-800 */
-  }
   
+  .home-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
   /* Subtítulo debajo del título principal */
   .home-subtitle {
     margin-top: 1rem;      /* ~ mt-4 */
@@ -59,7 +69,7 @@
   .home-intro-link {
     display: inline-block;
     margin-top: 2rem;            /* ~ mt-8 */
-    background-color: #3182ce;   /* ~ bg-blue-600 */
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
     color: #fff;
     font-size: 1.125rem;         /* ~ text-lg */
     padding: 0.75rem 1.5rem;     /* ~ px-6 py-3 */

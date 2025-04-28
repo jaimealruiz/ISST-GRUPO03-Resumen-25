@@ -21,7 +21,7 @@ function Home() {
     <div className="home-page">
       {/* Bloque principal / hero */}
       <div className="home-container">
-        <h1 className="home-title">📚 Resúmenes</h1>
+        <h1 className="home-title"> Resumen.es</h1>
         <p className="home-subtitle">
           Conquista el conocimiento en minutos.
           <br />
