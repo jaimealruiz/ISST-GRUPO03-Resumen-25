@@ -1,0 +1,1 @@
+// DashboardEscritor.tsx

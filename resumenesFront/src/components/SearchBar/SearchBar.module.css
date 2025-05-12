@@ -1,0 +1,59 @@
+/* SearchBar.module.css mejorado visualmente y sin borde en el input */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #edf8ff, #d6edfc);
+  padding: 0.85rem 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.38);
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  border: 1px solid #dbeafe;
+  backdrop-filter: blur(8px);
+}
+
+.wrapper:focus-within {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.35);
+  background: linear-gradient(to right, #dbeafe, #f0f9ff);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #60a5fa;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.wrapper:focus-within .icon {
+  color: #2563eb;
+}
+
+.input {
+  all: unset;
+  width: 100%;
+  font-size: 1rem;
+  color: #0f172a;
+  font-weight: 500;
+  transition: color 0.2s ease;
+
+  /* Asegura que no haya borde ni outline ni box-shadow heredado */
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+.input::placeholder {
+  color: #64748b;
+  font-weight: 400;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.input:focus::placeholder {
+  opacity: 0.5;
+}

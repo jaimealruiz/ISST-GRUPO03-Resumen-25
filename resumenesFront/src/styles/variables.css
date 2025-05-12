@@ -1,0 +1,47 @@
+:root {
+    /* 🎨 Colores */
+    --color-primary: #1E88E5;
+    --color-primary-light: #E3F2FD;
+    --color-secondary: #43A047;
+    --color-warning: #F44336;
+  
+    --color-text-main: #212121;
+    --color-text-secondary: #757575;
+  
+    --color-bg-base: #FAFAFA;
+    --color-card: #FFFFFF;
+    --color-border: #E0E0E0;
+  
+    /* 🌟 Estrellas */
+    --color-star: #FFC107;
+  
+    /* ✍️ Tipografía */
+    --font-main: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+  
+    --font-size-title-1: 32px;
+    --font-size-title-2: 26px;
+    --font-size-subtitle: 20px;
+    --font-size-body: 16px;
+    --font-size-small: 14px;
+    --font-size-note: 12px;
+  
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+  
+    /* 🔘 Botones */
+    --button-radius: 12px;
+    --button-padding: 10px 20px;
+  
+    /* 🧱 Tarjetas */
+    --card-radius: 16px;
+    --card-padding: 16px;
+    --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  
+    /* 🧭 Navbar */
+    --navbar-height: 64px;
+  
+    /* 🕒 Transiciones */
+    --transition-default: 0.2s ease-in-out;
+  }
+  

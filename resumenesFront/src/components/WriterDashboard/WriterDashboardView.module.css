@@ -1,0 +1,67 @@
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #f9f9f9;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.totalBox {
+  background: #eef2ff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.docsList {
+  margin-bottom: 1rem;
+}
+
+.docItem {
+  margin-bottom: 0.75rem;
+}
+
+.docTitle {
+  font-weight: 600;
+}
+
+.stars {
+  font-size: 0.9rem;
+  color: #fbbf24;
+}
+
+.count {
+  margin-left: 0.5rem;
+  color: #444;
+}
+
+.balanceBox {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #eef7ff;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.retiros {
+  margin-top: 1rem;
+}
+
+.retiroItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.amount {
+  color: green;
+  font-weight: 500;
+}

@@ -1,0 +1,21 @@
+/* src/components/Checkbox/Checkbox.module.css */
+.wrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+  
+  .input {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .label {
+    font-size: 16px;
+    color: #212121;
+  }
+  

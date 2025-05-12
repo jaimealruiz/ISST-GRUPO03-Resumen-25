@@ -1,0 +1,40 @@
+/* EmptyState.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+    text-align: center;
+    opacity: 0.9;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  
+  .iconWrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    width: 48px;
+    height: 48px;
+    color: #9ca3af; /* gris suave */
+  }
+  
+  .message {
+    font-size: 1rem;
+    color: #6b7280;
+    max-width: 300px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

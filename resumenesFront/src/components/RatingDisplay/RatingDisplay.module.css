@@ -1,0 +1,29 @@
+/* RatingDisplay.module.css */
+.container {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #111827;
+  }
+  
+  .average {
+    font-weight: 600;
+    margin-right: 0.5rem;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.125rem;
+  }
+  
+  .star {
+    color: #fbbf24; /* amarillo dorado */
+    font-size: 1.125rem;
+  }
+  
+  .total {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-left: 0.25rem;
+  }
+  

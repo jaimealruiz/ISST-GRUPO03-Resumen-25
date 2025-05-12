@@ -1,0 +1,18 @@
+.overlay {
+  position: fixed;
+  inset: 0;                  /* top:0; left:0; right:0; bottom:0; */
+  background: #ffffff;
+  display: grid;
+  grid-template-rows: auto 1fr;  /* header toma su altura natural; el resto es para el form */
+  overflow-x: hidden;        /* bloquea scroll lateral */
+  overflow-y: auto;          /* permite scroll vertical si hace falta */
+  z-index: 100;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centra verticalmente el form dentro de la segunda fila */
+  padding: 0 16px 24px;
+  /* elimina esa línea: margin-top: -300px; */
+}

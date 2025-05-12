@@ -1,0 +1,83 @@
+:root {
+  --color-ia: #6c5ce7;
+  --color-ia-hover: #5e50d4;
+  --color-texto: #fff;
+  --brillo: rgba(255, 255, 255, 0.6);
+}
+
+/* Contenedor general */
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botón */
+.botonIA {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ia);
+  color: var(--color-texto);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: background 0.3s ease;
+  animation: saltoLoop 5s infinite;
+}
+
+.botonIA:hover {
+  background: var(--color-ia-hover);
+}
+
+/* Texto */
+.texto {
+  z-index: 2;
+  position: relative;
+}
+
+/* Reflejo animado */
+.reflejo {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, var(--brillo), transparent);
+  transform: skewX(-20deg);
+  z-index: 1;
+  animation: reflejoLoop 5s infinite;
+}
+
+/* Animación del reflejo en bucle */
+@keyframes reflejoLoop {
+  0% {
+    left: -75%;
+  }
+  10% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Salto animado en bucle */
+@keyframes saltoLoop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

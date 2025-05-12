@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--textMain);
+    line-height: 1.2;
+  }
+  
+  .author {
+    font-size: 0.75rem;
+    color: var(--textSecondary);
+    margin-bottom: 0.25rem;
+  }
+  
+  .lastAccess {
+    font-size: 0.75rem;
+    color: var(--textSecondary);
+  }
+  
+  .progressBar {
+    height: 6px;
+    background-color: var(--border);
+    border-radius: 6px;
+    margin-top: 0.25rem;
+    overflow: hidden;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+  }
+  

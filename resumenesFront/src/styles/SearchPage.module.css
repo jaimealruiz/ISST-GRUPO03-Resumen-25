@@ -1,0 +1,28 @@
+/* SearchPage.module.css */
+
+/* SearchPage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    min-height: 100vh;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1rem;
+    justify-items: center;
+    margin-top: 1rem;
+    padding-bottom: 4rem; /* para que no quede tapado por BottomNav */
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem 1.5rem;
+    }
+  }
+  

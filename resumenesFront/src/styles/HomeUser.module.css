@@ -1,0 +1,53 @@
+/* src/pages/HomeUser/HomeUser.module.css */
+.container {
+  padding: 16px;
+  padding-bottom: 72px; /* espacio para el nav */
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+.tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #212121;
+  margin: 12px 0 0;
+  line-height: 32px;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+  margin: 0 0 12px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;         /* Chrome, Safari */
+}
+
+.historyList {
+  display: flex;
+  flex-direction: column;
+}

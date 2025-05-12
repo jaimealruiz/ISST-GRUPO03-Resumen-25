@@ -1,0 +1,55 @@
+.item {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .cover {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 12px;
+  }
+  
+  .info {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+    margin: 0;
+    line-height: 20px;
+  }
+  
+  .author {
+    font-size: 14px;
+    color: #616161;
+    margin: 4px 0 2px;
+  }
+  
+  .lastAccess {
+    font-size: 14px;
+    color: #616161;
+    margin: 0 0 8px;
+  }
+  
+  .progressBar {
+    width: 100%;
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #2962ff;
+    border-radius: 3px 0 0 3px;
+  }
+  

@@ -1,0 +1,12 @@
+/* src/components/SubscriptionInfo/SubscriptionInfo.module.css */
+.container {
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 8px;
+  }
+  
+  .amount {
+    color: #212121;
+  }
+  

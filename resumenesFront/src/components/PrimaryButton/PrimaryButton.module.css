@@ -1,0 +1,29 @@
+/* src/components/PrimaryButton/PrimaryButton.module.css */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2962ff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .button:hover:not(:disabled) {
+    background-color: #0039cb;
+  }
+  
+  .fullWidth {
+    width: 100%;
+  }
+  

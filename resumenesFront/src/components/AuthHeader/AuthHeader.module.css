@@ -1,0 +1,43 @@
+.header {
+  position: relative;
+  z-index: 1;
+  padding-top: 64px;
+  padding-bottom: 16px;
+  text-align: center;
+  background: #ffffff;
+}
+
+  
+  .backButton {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: none;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .backIcon {
+    width: 24px;
+    height: 24px;
+    color: #212121;
+  }
+  
+  .logo {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+  
+  .title {
+    margin-top: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #212121;
+    line-height: 32px;
+  }
+  

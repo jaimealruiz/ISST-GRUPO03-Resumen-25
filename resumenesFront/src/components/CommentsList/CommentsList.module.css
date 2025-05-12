@@ -1,0 +1,66 @@
+/* CommentsList.module.css */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.avatarPlaceholder {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userName {
+  font-weight: 600;
+  color: #111827;
+}
+
+.stars {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.starFilled {
+  color: #fbbf24;
+}
+
+.starEmpty {
+  color: #d1d5db;
+}
+
+.comment {
+  margin-top: 0.25rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.empty {
+  color: #6b7280;
+  text-align: center;
+  padding: 1rem;
+}

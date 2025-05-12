@@ -1,0 +1,41 @@
+.card {
+    background-color: var(--card);
+    border-radius: 12px;
+    padding: 0.5rem;
+    width: 110px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    box-shadow: var(--shadowCard);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--textMain);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .author {
+    font-size: 0.75rem;
+    color: var(--textSecondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
