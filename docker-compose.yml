@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./resumenesBack
+      dockerfile: Dockerfile
+    container_name: resumenes-backend
+
+    environment:
+      - PORT=8080
+      - MYSQLHOST=db
+      - MYSQLPORT=3306
+      - MYSQLDATABASE=resumenes
+      - MYSQLUSER=root
+      - MYSQLPASSWORD=rootpass
+      - JWT_SECRET=7d3bX9!a2LzR#vCqP8tFnZ4g$kT6mBhW1eY@pQjUv0sNlXEfM5GwAiCZ
+      - JWT_EXPIRATION=3600000
+      - STRIPE_SECRET_KEY=sk_test_51P2wD0BQP2FXIWh86Keyc3juzu2rahc8wos3nQtbH0zukfoJU4RkfMnnUleRgm6x8pcEKGGuHowgb4XglQQCYng800xokcISCR
+      - STRIPE_WEBHOOK_SECRET=whsec_16bb96524895398a29843d065ad27283d57d9cb45435729b75b0b772db3cfd11
+      - STRIPE_SUCCESS_URL=/profile
+      - STRIPE_CANCEL_URL=/
+      - FRONT_SERVER=http://localhost:5173
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./resumenesFront
+      dockerfile: Dockerfile
+    container_name: resumenes-frontend
+    ports:
+      - "80:80"
+    environment:
+      - VITE_API_URL=http://localhost:8080
+
+  db:
+    image: mysql:8.0
+    container_name: resumenes-db
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: resumenes
+      MYSQL_ROOT_PASSWORD: rootpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
