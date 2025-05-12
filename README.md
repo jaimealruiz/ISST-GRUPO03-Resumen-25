@@ -12,7 +12,7 @@ Este proyecto está compuesto por dos partes principales:
 * Java 17+
 * Node.js 18+
 * Docker & Docker Compose
-* Conexión a Internet ✅ *(la base de datos está alojada en Railway)*
+* Conexión a Internet *(la base de datos está alojada en Railway)*
 
 ---
 
